@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Carrinho - PataFeliz</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="cabecalho">
+  <div class="cabecalho-conteudo">
+    <a href="index.html" class="logo"><span class="logo-icone">🐾</span> Pata<span>Feliz</span></a>
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+    </nav>
+    <div class="acoes">
+      <a href="login.html" class="btn-icone">👤</a>
+      <a href="carrinho.html" class="btn-carrinho ativo">🛒 <span>Carrinho</span><span class="badge">0</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="secao" style="padding-bottom:0;">
+  <h2 class="secao-titulo">Meu carrinho</h2>
+  <p class="secao-sub">Confira seus itens antes de finalizar</p>
+</section>
+
+<div class="carrinho-container">
+  <div id="lista-carrinho"></div>
+  <aside id="resumo-carrinho" class="resumo"></aside>
+</div>
+
+<footer class="rodape">
+  <div class="rodape-copy">© 2026 PataFeliz · Feito com amor pelos pets</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

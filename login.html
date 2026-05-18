@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entrar - PataFeliz</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="cabecalho">
+  <div class="cabecalho-conteudo">
+    <a href="index.html" class="logo"><span class="logo-icone">🐾</span> Pata<span>Feliz</span></a>
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+    </nav>
+    <div class="acoes">
+      <a href="carrinho.html" class="btn-carrinho">🛒 <span>Carrinho</span><span class="badge">0</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="tela-login">
+  <div class="login-lateral">
+    <div class="login-lateral-conteudo">
+      <div class="login-emoji">🐾</div>
+      <h2>Bem-vindo à PataFeliz!</h2>
+      <p>Acesse sua conta para acompanhar pedidos, salvar favoritos e receber ofertas exclusivas para seu pet.</p>
+    </div>
+  </div>
+
+  <div class="login-formulario">
+    <form id="formulario" class="formulario" data-modo="entrar" onsubmit="return enviarLogin(event)">
+      <h2 id="titulo-form">Bem-vindo de volta</h2>
+      <p id="sub-form" class="sub">Entre para continuar suas compras</p>
+
+      <div id="campo-nome" class="campo" style="display:none;">
+        <label>Nome completo</label>
+        <input type="text" placeholder="Seu nome">
+      </div>
+      <div class="campo">
+        <label>E-mail</label>
+        <input type="email" required placeholder="voce@email.com">
+      </div>
+      <div class="campo">
+        <label>Senha</label>
+        <input type="password" required placeholder="••••••••">
+      </div>
+
+      <button id="btn-enviar" type="submit" class="btn btn-primario">Entrar</button>
+      <p id="texto-alternar" class="alternar">Não tem conta? <a onclick="alternarLogin()">Cadastre-se</a></p>
+    </form>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PataFeliz - Pet Shop Online</title>
+<meta name="description" content="Tudo para o seu pet: rações, brinquedos, acessórios, higiene e conforto com entrega rápida.">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="cabecalho">
+  <div class="cabecalho-conteudo">
+    <a href="index.html" class="logo">
+      <span class="logo-icone">🐾</span>
+      Pata<span>Feliz</span>
+    </a>
+    <nav class="menu">
+      <a href="index.html" class="ativo">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="produtos.html">Alimentação</a>
+      <a href="produtos.html">Brinquedos</a>
+    </nav>
+    <div class="acoes">
+      <a href="login.html" class="btn-icone" aria-label="Entrar">👤</a>
+      <a href="carrinho.html" class="btn-carrinho">
+        🛒 <span>Carrinho</span>
+        <span class="badge">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-conteudo">
+    <div>
+      <h1>O melhor para <span>seu pet</span>, com carinho.</h1>
+      <p>Rações, brinquedos, acessórios e muito mais. Entrega rápida e frete grátis acima de R$ 150.</p>
+      <form class="busca" onsubmit="return buscarDoHero(event)">
+        <input id="busca-hero" type="text" placeholder="Buscar produtos...">
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+    <div class="hero-imagem">🐶🐱</div>
+  </div>
+</section>
+
+<section class="secao">
+  <h2 class="secao-titulo">Categorias</h2>
+  <p class="secao-sub">Encontre o que seu amigo precisa</p>
+  <div class="categorias">
+    <a href="produtos.html" class="categoria"><div class="categoria-icone">🥩</div><div class="categoria-nome">Alimentação</div></a>
+    <a href="produtos.html" class="categoria"><div class="categoria-icone">🎾</div><div class="categoria-nome">Brinquedos</div></a>
+    <a href="produtos.html" class="categoria"><div class="categoria-icone">🦮</div><div class="categoria-nome">Acessórios</div></a>
+    <a href="produtos.html" class="categoria"><div class="categoria-icone">🧴</div><div class="categoria-nome">Higiene</div></a>
+    <a href="produtos.html" class="categoria"><div class="categoria-icone">🛏️</div><div class="categoria-nome">Conforto</div></a>
+  </div>
+</section>
+
+<section class="secao">
+  <h2 class="secao-titulo">Destaques</h2>
+  <p class="secao-sub">Os produtos preferidos dos nossos clientes</p>
+  <div id="destaques" class="grade-produtos"></div>
+  <div style="text-align:center;margin-top:30px;">
+    <a href="produtos.html" class="btn btn-contorno">Ver todos os produtos</a>
+  </div>
+</section>
+
+<footer class="rodape">
+  <div class="rodape-conteudo">
+    <div>
+      <div class="logo" style="margin-bottom:10px;"><span class="logo-icone">🐾</span> PataFeliz</div>
+      <p style="color:#888;font-size:14px;">Tudo que seu melhor amigo precisa, com carinho e qualidade.</p>
+    </div>
+    <div><h4>Loja</h4><ul><li>Cachorros</li><li>Gatos</li><li>Promoções</li></ul></div>
+    <div><h4>Ajuda</h4><ul><li>Entregas</li><li>Trocas</li><li>Contato</li></ul></div>
+    <div><h4>Receba novidades</h4><ul><li>Dicas e ofertas no seu e-mail.</li></ul></div>
+  </div>
+  <div class="rodape-copy">© 2026 PataFeliz · Feito com amor pelos pets</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
