@@ -199,7 +199,7 @@ function enviarLogin(e){
 // Busca no hero -> redireciona
 function buscarDoHero(e){
   e.preventDefault();
-  const q = document.getElementById('busca-hero').value.trim();
+  const q = document.getElementById('busca').value.trim();
   window.location.href = 'produtos.html'+(q?'?q='+encodeURIComponent(q):'');
   return false;
 }
